@@ -20,6 +20,13 @@ Route::get('teachers/{id}/edit', [App\Http\Controllers\TeacherController::class,
 Route::put('teachers/{id}/edit',[App\Http\Controllers\TeacherController::class, 'update']);
 Route::get('teachers/{id}/delete',[App\Http\Controllers\TeacherController::class, 'destroy']);
 
+Route::get('students/create2', [App\Http\Controllers\TeacherController::class, 'create2']);
+Route::post('students/create2', [App\Http\Controllers\TeacherController::class, 'store2']);
+Route::get('students/{id}/edit2', [App\Http\Controllers\TeacherController::class, 'edit2']);
+Route::put('students/{id}/edit2',[App\Http\Controllers\TeacherController::class, 'update2']);
+Route::get('students/{id}/delete2',[App\Http\Controllers\TeacherController::class, 'destroy2']);
+
+
 Route::get('/', function () {
     return view('category.index');
 });
