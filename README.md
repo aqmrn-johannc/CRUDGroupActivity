@@ -1,4 +1,4 @@
-#P2 GROUP ACTIVITY - API
+# P2 GROUP ACTIVITY - API
 
 Create a CRUD API  using laravel with the following table:
 
