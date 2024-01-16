@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', [App\Http\Controllers\TeacherController::class, 'index']);
 Route::get('teachers', [App\Http\Controllers\TeacherController::class, 'index']);
 Route::get('teachers/create', [App\Http\Controllers\TeacherController::class, 'create']);
 Route::post('teachers/create', [App\Http\Controllers\TeacherController::class, 'store']);
@@ -25,8 +26,3 @@ Route::post('students/create2', [App\Http\Controllers\TeacherController::class, 
 Route::get('students/{id}/edit2', [App\Http\Controllers\TeacherController::class, 'edit2']);
 Route::put('students/{id}/edit2',[App\Http\Controllers\TeacherController::class, 'update2']);
 Route::get('students/{id}/delete2',[App\Http\Controllers\TeacherController::class, 'destroy2']);
-
-
-Route::get('/', function () {
-    return view('category.index');
-});
